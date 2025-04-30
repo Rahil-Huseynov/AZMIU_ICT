@@ -59,15 +59,18 @@ ul {
     justify-content: center;
     padding: 7px 0px;
 }
-.logo_title{
+
+.logo_title {
     font-size: 2rem;
     font-weight: 800;
     padding-top: 0.5rem;
     color: #032084;
 }
+
 .image_item {
-    width: 50vw;
-    height: 100vh;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
 }
 
 .container {
@@ -116,6 +119,14 @@ ul {
 }
 
 .bg-light {
+    background-color: var(--light-color);
+}
+
+#services {
+    background-color: var(--light-color);
+}
+
+#team {
     background-color: var(--light-color);
 }
 
@@ -234,6 +245,7 @@ header .container {
     min-height: 600px;
     position: relative;
     overflow: hidden;
+    margin-bottom: 50px;
 }
 
 .slider-container {
@@ -265,7 +277,7 @@ header .container {
 }
 
 .slide-content {
-    width: 50%;
+    width: 40%;
     padding: 0 50px;
     z-index: 2;
     text-align: center;
@@ -285,7 +297,8 @@ header .container {
 }
 
 .slide-image {
-    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(8% 0, 100% 0, 100% 100%, 0% 100%);
+    width: 60vw;
 }
 
 .slider-controls {
@@ -337,6 +350,11 @@ header .container {
 }
 
 /* Applications Section */
+#applications {
+    background-color: var(--light-color);
+
+}
+
 .cards-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -959,6 +977,12 @@ footer {
 
 
 @media screen and (max-width: 600px) {
+
+    .slide-image {
+        padding-top: 2rem;
+        order: 2;
+    }
+
     .slide {
         position: absolute;
         top: 0;
@@ -967,22 +991,28 @@ footer {
         height: 100%;
         opacity: 0;
         transition: opacity 1s ease;
-        display: grid;
+        display: flex;
         align-items: center;
+        flex-direction: column-reverse;
     }
 
     .slide-content {
         display: grid;
         place-items: center;
         min-height: 300px;
-
+        margin-bottom: 9rem;
         width: 100%;
         word-break: break-word;
+    }
+
+    .slider-controls {
+        bottom: 90px;
     }
 
     .slide-image {
         width: 100%;
         clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
+        padding-bottom: 2rem;
     }
 
     .image_item {
@@ -990,13 +1020,14 @@ footer {
         height: 100%;
         padding: 20px;
     }
-    .hero{
+
+    .hero {
         min-height: 80vh;
     }
 }
 
 @media screen and (max-width: 495px) {
-    .nav-menu{
+    .nav-menu {
         width: 70%;
     }
 }
