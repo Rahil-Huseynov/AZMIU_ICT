@@ -542,7 +542,7 @@ header .container {
     box-shadow: var(--box-shadow);
     overflow: hidden;
     transition: var(--transition);
-    width: 380px;
+    max-width: 380px;
 
 }
 
