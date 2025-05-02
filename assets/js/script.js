@@ -218,3 +218,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
   
+  const copyrightdate = document.getElementById('copyright-date') 
+  const date = new Date()
+  const year = date.getFullYear()
+  copyrightdate.innerHTML =`&copy; Copyright © 2019 - ${year}`

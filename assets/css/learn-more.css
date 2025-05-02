@@ -412,6 +412,9 @@ ul {
     gap: 2rem;
     width: 50%;
 }
+.overview-content{
+    text-align: center;
+}
 
 /* Responsive Styles */
 

@@ -852,9 +852,17 @@ footer {
 }
 
 .footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
     text-align: center;
     padding-top: 20px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom-img{
+    width: 40px;
 }
 
 .footer-bottom p {
