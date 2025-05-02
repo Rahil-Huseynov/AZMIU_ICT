@@ -542,7 +542,7 @@ header .container {
     box-shadow: var(--box-shadow);
     overflow: hidden;
     transition: var(--transition);
-    max-width: 380px;
+    max-width: 340px;
 
 }
 
@@ -1097,5 +1097,5 @@ footer {
 }
 
 .height_news {
-    height: 100px;
+    height: 120px;
 }
